@@ -384,60 +384,70 @@
                         </a></li>
                 </ul>
             </div>
-            <form class="footer-form" action="">
-                <div class="footer-field">
+            <div>
+                <h2 class="footer-email-label">Подпишитесь на рассылку</h2>
+                <form class="footer-form">
+
                     <label class="footer-email">
-                        <span class="footer-email-label">Подпишитесь на рассылку</span>
+
                         <input class="footer-input" type="email" name="footer-email" placeholder="E-mail">
                     </label>
-                    <div class="subscribe">
-                        <button class="btn-footer" type="submit">
-                            Подписаться
-                            <svg class="send-icon" width="24px" height="24px">
-                                <use href="./images/sprite.svg#icon-send"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </form>
+
+                    <button class="btn-footer" type="submit">
+                        Подписаться
+                        <svg class="send-icon" width="24px" height="24px">
+                            <use href="./images/sprite.svg#icon-send"></use>
+
+                        </svg>
+                    </button>
+
+                </form>
+            </div>
         </div>
-
-
-
     </footer>
+
+    <!-- MODAL -->
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <form class="form" action="">
-                <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+
+            <button class="modal-close" data-modal-close>
+                <svg class="close" width="11" height="11">
+                    <use href="./images/sprite.svg#icon-close"></use>
+
+                </svg>
+            </button>
+            <form class="form">
+                <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
 
                 <label class="form-field">
                     <span class="form-label">Имя</span>
-                    <div class="input-form-field">
+                    <span class="input-form-field">
                         <input class="form-input" type="text" name="name">
                         <svg class="modal-icon">
                             <use href="./images/sprite.svg#icon-person-form"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
 
                 <label class="form-field">
                     <span class="form-label">Телефон</span>
-                    <div class="input-form-field">
+                    <span class="input-form-field">
                         <input class="form-input" type="tel" name="tel">
                         <svg class="modal-icon">
                             <use href="./images/sprite.svg#icon-phone-form"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
 
                 <label class="form-field">
                     <span class="form-label">Почта</span>
-                    <div class="input-form-field">
+                    <span class="input-form-field">
                         <input class="form-input" type="email" name="email">
                         <svg class="modal-icon">
                             <use href="./images/sprite.svg#icon-email-form"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
 
                 <label class="form-field comment">
@@ -467,12 +477,7 @@
 
             </form>
 
-            <button class="modal-close" data-modal-close>
-                <svg class="close" width="11" height="11">
-                    <use href="./images/sprite.svg#icon-close"></use>
 
-                </svg>
-            </button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
