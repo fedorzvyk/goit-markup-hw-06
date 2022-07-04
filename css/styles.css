@@ -942,6 +942,7 @@ color: var(--primary-white-color);
 /* CHECKBOX  */
 
 .form-checkbox{
+    position: relative;
     display: flex;
     margin-bottom: 30px;
     align-items:center;
@@ -958,9 +959,11 @@ color: var(--primary-white-color);
 .checkbox-input:checked ~ .checkbox-icon.on {
     opacity: 1;
     }
+    
   
 
 .checkbox-icon {
+    
     display: inline-block;
     margin-right: 7px;
     width: 16px;
@@ -971,6 +974,7 @@ color: var(--primary-white-color);
 .checkbox-icon.on {
     fill: var(--accent-color);
     position: absolute;
+    left: 0;
     opacity: 0;
 
     transition-property: opacity;
